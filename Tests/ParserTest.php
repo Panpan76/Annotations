@@ -179,7 +179,7 @@ class ParserTest extends TestCase{
 
   public function providerForGettingFilesTest(){
     $directory = __DIR__.'/TestsCase/';
-    $params1 = array($directory, array($directory.'Subfolder\phpFile.php', $directory.'fileWithAnnotations.php', $directory.'phpFile.php'));
+    $params1 = array($directory, array($directory.'Subfolder/phpFile.php', $directory.'fileWithAnnotations.php', $directory.'phpFile.php'));
 
     return array(
       $params1,
