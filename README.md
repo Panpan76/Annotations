@@ -1,6 +1,9 @@
 # Annotations
 
 [![Build Status](https://travis-ci.org/Panpan76/Annotations.svg?branch=master)](https://travis-ci.org/Panpan76/Annotations)
+[![codecov](https://codecov.io/gh/Panpan76/Annotations/branch/master/graph/badge.svg)](https://codecov.io/gh/Panpan76/Annotations)
+
+
 
 ---------------
 ## Documentation
