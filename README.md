@@ -15,5 +15,5 @@
 ## Installation
 Using composer
 ```
-composer install panpan76/annotations
+composer require panpan76/annotations
 ```
