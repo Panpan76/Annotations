@@ -1,0 +1,13 @@
+{
+    "name": "panpan76/annotations",
+    "license": "Apache License",
+    "authors": [
+        {
+            "name": "Panpan76",
+            "email": "cedric.moclyn@hotmail.fr"
+        }
+    ],
+    "require": {
+        "php": "7.1"
+    }
+}
