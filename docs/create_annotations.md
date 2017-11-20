@@ -2,7 +2,7 @@
 -----------
 ## Documentation
 
-[Back to the summary](README.md)
+[Back to the summary](../README.md)
 
 ### How to create annotations ?
 
