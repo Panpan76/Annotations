@@ -10,3 +10,10 @@
 
 - [How to use annotations ?](docs/use_annotations.md)
 - [How to create annotations ?](docs/create_annotations.md)
+
+
+## Installation
+Using composer
+```
+composer install panpan76/annotations
+```
