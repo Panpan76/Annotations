@@ -3,6 +3,6 @@ php:
   - '7.1'
   - nightly
 script: phpunit --testsuite Tests --configuration Tests/phpunit.xml
-notifications:
-    on_success: never
-    on_failure: always
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -t 5b671b7d-fe29-42f4-ab98-1405b163e21a
