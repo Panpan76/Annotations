@@ -1,7 +1,6 @@
 language: php
 php:
   - '7.1'
-  - hhvm # on Trusty only
   - nightly
 script: phpunit --testsuite Tests --configuration Tests/phpunit.xml
 notifications:
