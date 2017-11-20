@@ -103,7 +103,7 @@ class ParserTest extends TestCase{
    * @covers Annotations\Parser::getAnnotationsTypesDirectory
    */
   public function testSetAnnotationsTypesDirectory(){
-    $directory = __DIR__.'\TestsCase\\Subfolder';
+    $directory = __DIR__.'/TestsCase/Subfolder';
     $parser = new Parser();
     $parser->setAnnotationsTypesDirectory($directory);
     $this->assertEquals($directory, $parser->getAnnotationsTypesDirectory());
@@ -158,7 +158,7 @@ class ParserTest extends TestCase{
 
 
   public function providerForParsableTest(){
-    $directory = __DIR__.'\TestsCase\\';
+    $directory = __DIR__.'/TestsCase/';
     $params1 = array($directory,                          false);  // Directory that exists
     $params2 = array($directory.'phpFile.php',            true);   // File that exists
     $params3 = array($directory.'directory_not_existing', false);  // Directory that doesn't exists
@@ -178,7 +178,7 @@ class ParserTest extends TestCase{
   }
 
   public function providerForGettingFilesTest(){
-    $directory = __DIR__.'\TestsCase\\';
+    $directory = __DIR__.'/TestsCase/';
     $params1 = array($directory, array($directory.'Subfolder\phpFile.php', $directory.'fileWithAnnotations.php', $directory.'phpFile.php'));
 
     return array(
@@ -187,7 +187,7 @@ class ParserTest extends TestCase{
   }
 
   public function providerForGettingLinesTest(){
-    $directory = __DIR__.'\TestsCase\\';
+    $directory = __DIR__.'/TestsCase/';
     $params1 = array($directory.'phpFile.php', array('hello', 'World !'));
 
     return array(
@@ -196,7 +196,7 @@ class ParserTest extends TestCase{
   }
 
   public function providerForParsingFileTest(){
-    $directory = __DIR__.'\TestsCase\\';
+    $directory = __DIR__.'/TestsCase/';
     $params1 = array(
       $directory,
       array(
@@ -221,7 +221,7 @@ class ParserTest extends TestCase{
   }
 
   public function providerForGettingAnnotationsTypesClassInDirectory(){
-    $directory = __DIR__.'\TestsCase\\';
+    $directory = __DIR__.'/TestsCase/';
     $params1 = array($directory, array('Annotations\Types\fileWithAnnotations'));
 
     return array(
