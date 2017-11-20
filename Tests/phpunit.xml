@@ -9,10 +9,10 @@
   <filter>
     <whitelist>
       <!-- lib subfolders to include -->
-      <directory>../Exceptions</directory>
-      <directory>../Interfaces</directory>
-      <directory>../Types</directory>
-      <directory>../Parser.php</directory>
+      <directory>../src/Exceptions</directory>
+      <directory>../src/Interfaces</directory>
+      <directory>../src/Types</directory>
+      <directory>../src/Parser.php</directory>
     </whitelist>
   </filter>
 

@@ -9,6 +9,8 @@ function autoloadClass($class){
   $classFile = str_replace(getProjectName().'/', '', $classFile);
   if(file_exists($classFile)){
     require_once $classFile;
+  }elseif(file_exists('src/'.$classFile)){
+    require_once 'src/'.$classFile;
   }
 }
 

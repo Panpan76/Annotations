@@ -14,7 +14,7 @@ class Parser{
   protected const REGEX_NAMESPACE         = '/^namespace\s(.+);/'; // Pour match le namespace (un par fichier)
   protected const REGEX_CLASS             = '/class\s(\w+)\s?.*{/'; // Pour match la classe (une par fichier)
 
-  protected const DEFAULT_TYPES_DIRECTORY = 'Types';
+  protected const DEFAULT_TYPES_DIRECTORY = 'src/Types';
   private $annotationsTypesDirectory;
 
   /**
