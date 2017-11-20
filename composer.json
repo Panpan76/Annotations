@@ -10,7 +10,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "7.*"
-    }
+    },
     "autoload": {
         "psr-4": {
             "Annotations\\": "src"
