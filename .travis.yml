@@ -3,7 +3,7 @@ php:
   - '7.1'
   - hhvm # on Trusty only
   - nightly
-script: phpunit
+script: phpunit --testsuite Tests --configuration Tests/phpunit.xml
 notifications:
     on_success: never
     on_failure: always
