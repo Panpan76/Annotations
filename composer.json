@@ -1,19 +1,19 @@
 {
     "name": "panpan76/annotations",
     "license": "Apache License",
-    "authors": [
-        {
-            "name": "Panpan76",
-            "email": "cedric.moclyn@hotmail.fr"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Annotations\\": "src/"
         }
     },
-    "minimum-stability": "dev",
     "require": {
         "php": "7.*"
-    }
+    },
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Panpan76",
+            "email": "cedric.moclyn@hotmail.fr"
+        }
+    ]
 }
