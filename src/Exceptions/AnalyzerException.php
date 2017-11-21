@@ -2,8 +2,8 @@
 
 namespace Annotations\Exceptions;
 
-class ParserException extends Exception{
-  const LOG_FILE = 'annotations';
+class AnalyzerException extends Exception{
+  const LOG_FILE = 'analyzer';
 
   const NOT_DIRECTORY = 0;
   const NOT_FILE      = 1;
