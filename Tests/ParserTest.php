@@ -2,14 +2,14 @@
 
 namespace Annotations\Tests;
 
-require_once __DIR__.'/../autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
 
 use Annotations\Parser;
 use Annotations\Exceptions\Exception;
 use Annotations\Exceptions\ParserException;
-use Logguers\Logguer;
+use Annotations\Logguers\Logguer;
 
 class ParserTest extends TestCase{
 
@@ -47,9 +47,9 @@ class ParserTest extends TestCase{
    * @covers Annotations\Exceptions\ParserException::__construct
    * @covers Annotations\Exceptions\Exception::__construct
    * @covers Annotations\Exceptions\Exception::setLogguer
-   * @covers Logguers\Logguer::__construct
-   * @covers Logguers\Logguer::setLogFile
-   * @covers Logguers\Logguer::log
+   * @covers Annotations\Logguers\Logguer::__construct
+   * @covers Annotations\Logguers\Logguer::setLogFile
+   * @covers Annotations\Logguers\Logguer::log
    */
   public function testExceptionGetFiles(){
     Exception::setLogguer(new Logguer());
@@ -81,9 +81,9 @@ class ParserTest extends TestCase{
    * @covers Annotations\Exceptions\ParserException::__construct
    * @covers Annotations\Exceptions\Exception::__construct
    * @covers Annotations\Exceptions\Exception::setLogguer
-   * @covers Logguers\Logguer::__construct
-   * @covers Logguers\Logguer::setLogFile
-   * @covers Logguers\Logguer::log
+   * @covers Annotations\Logguers\Logguer::__construct
+   * @covers Annotations\Logguers\Logguer::setLogFile
+   * @covers Annotations\Logguers\Logguer::log
    */
   public function testExceptionGetLines(){
     Exception::setLogguer(new Logguer());
@@ -114,9 +114,9 @@ class ParserTest extends TestCase{
    * @covers Annotations\Exceptions\ParserException::__construct
    * @covers Annotations\Exceptions\Exception::__construct
    * @covers Annotations\Exceptions\Exception::setLogguer
-   * @covers Logguers\Logguer::__construct
-   * @covers Logguers\Logguer::setLogFile
-   * @covers Logguers\Logguer::log
+   * @covers Annotations\Logguers\Logguer::__construct
+   * @covers Annotations\Logguers\Logguer::setLogFile
+   * @covers Annotations\Logguers\Logguer::log
    */
   public function testExceptionSetAnnotationsTypesDirectory(){
     Exception::setLogguer(new Logguer());
