@@ -15,8 +15,7 @@ class ParameterTest extends TestCase{
    * @covers Annotations\Types\Parameter::checkAnnotation
    */
   public function testCheckAnnotation(string $annotation, array $expected){
-    $parameter = new Parameter();
-    $this->assertEquals($expected, $parameter->checkAnnotation($annotation));
+    $this->assertEquals($expected, Parameter::checkAnnotation($annotation));
   }
 
 
@@ -24,7 +23,7 @@ class ParameterTest extends TestCase{
     $params1 = array('nothing match here',                  array());
     $params2 = array('param',                               array());
     $params3 = array('param string $str description test',  array(
-      '$str' => array(
+      'str' => array(
         'type'        => 'string',
         'description' => 'description test'
       )
