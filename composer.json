@@ -12,7 +12,7 @@
             "Annotations\\": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": "7.*"
     }

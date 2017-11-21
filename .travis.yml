@@ -6,4 +6,3 @@ script: phpunit --testsuite Tests --configuration Tests/phpunit.xml
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 5b671b7d-fe29-42f4-ab98-1405b163e21a
-  - curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=Panpan76&apiToken=RcI0Te_6NamxRF_zSwkD' -d'{"repository":{"url":"https://packagist.org/packages/panpan76/annotations"}}'
