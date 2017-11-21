@@ -1,6 +1,6 @@
 <?php
 
-namespace Logguers;
+namespace Annotations\Logguers;
 
 class Logguer implements \Annotations\Interfaces\Logguable{
   ###############
