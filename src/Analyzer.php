@@ -2,6 +2,8 @@
 
 namespace Annotations;
 
+use Annotations\Exceptions\AnalyzerException;
+
 class Analyzer{
 
   private const DEFAULT_TYPES_DIRECTORY = __DIR__.'/Types';
@@ -21,12 +23,19 @@ class Analyzer{
   }
 
   public function setAnnotationsTypesDirectory(string $directory):void{
+    $directory = realpath($directory);
+    if(!is_dir($directory)){
+      throw new AnalyzerException("'$directory' is not a valid directory", AnalyzerException::NOT_DIRECTORY);
+    }
     $this->annotationsTypesDirectory = $directory;
   }
   public function getAnnotationsTypesDirectory():?string{
     return $this->annotationsTypesDirectory;
   }
 
+  /**
+   * @return Generator [description]
+   */
   public function getAnnotationsTypesClass():\Generator{
     foreach($this->getFiles(self::DEFAULT_TYPES_DIRECTORY) as $file){
       $class = 'Annotations\Types\\'.basename(explode('.', $file)[0]); // Create the classname from the filename
