@@ -3,5 +3,5 @@
 namespace Annotations\Interfaces;
 
 interface CheckAnnotation{
-  public function checkAnnotation(string $annotation):array;
+  public static function checkAnnotation(string $annotation):array;
 }
