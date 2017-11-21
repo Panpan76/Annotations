@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-  bootstrap="bootstrap.php"
+  bootstrap="../vendor/autoload.php"
   colors="true"
   convertErrorsToExceptions="true"
   convertNoticesToExceptions="true"
@@ -12,7 +12,8 @@
       <directory>../src/Exceptions</directory>
       <directory>../src/Interfaces</directory>
       <directory>../src/Types</directory>
-      <directory>../src/Parser.php</directory>
+      <directory>../src/Analyzer.php</directory>
+      <directory>../src/InformationClass.php</directory>
     </whitelist>
   </filter>
 

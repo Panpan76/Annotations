@@ -2,8 +2,6 @@
 
 namespace Annotations\Tests;
 
-require_once __DIR__.'/bootstrap.php';
-
 use PHPUnit\Framework\TestCase;
 
 use Annotations\Types\Parameter;
