@@ -19,6 +19,4 @@ composer require panpan76/annotations
 ```
 
 ## TODO
-- [ ] Update the tests
 - [ ] Update the documentation
-- [ ] Update Exceptions
