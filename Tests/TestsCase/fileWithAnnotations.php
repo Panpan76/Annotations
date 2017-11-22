@@ -10,5 +10,5 @@ class fileWithAnnotations{
    */
   public function doNothing(string $str):void{}
 
-  public function checkAnnotation(){}
+  public static function checkAnnotation(){}
 }

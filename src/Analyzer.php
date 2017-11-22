@@ -56,10 +56,6 @@ class Analyzer{
    * @return Generator             Get each files
    */
   private function getFiles(string $directory):\Generator{
-    if(!is_dir($directory)){
-      throw new ParserException("'$directory' is not a directory", ParserException::NOT_DIRECTORY);
-      return;
-    }
     foreach(array_diff(scandir($directory), array('.', '..')) as $element){
       $element = "$directory/$element";
       if(is_dir($element)){

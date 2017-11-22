@@ -6,6 +6,9 @@ use PHPUnit\Framework\TestCase;
 
 use Annotations\Analyzer;
 use Annotations\Exceptions\AnalyzerException;
+use Annotations\Exceptions\Exception;
+
+use Annotations\Logguers\Logguer;
 
 class AnalyzerTest extends TestCase{
 
@@ -14,9 +17,12 @@ class AnalyzerTest extends TestCase{
    * @covers Annotations\Analyzer::setAnnotationsTypesDirectory
    * @covers Annotations\Analyzer::getAnnotationsTypesDirectory
    * @covers Annotations\Exceptions\AnalyzerException::__construct
+   * @covers Annotations\Exceptions\Exception::__construct
+   * @covers Annotations\Exceptions\Exception::setLogguer
    */
   public function testAnnotationsTypesDirectory(string $directory, $expected){
     $analyzer = new Analyzer();
+    Exception::setLogguer(new Logguer());
     try{
       $analyzer->setAnnotationsTypesDirectory($directory);
       $this->assertEquals($expected, $analyzer->getAnnotationsTypesDirectory());

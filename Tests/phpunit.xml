@@ -10,7 +10,6 @@
     <whitelist>
       <!-- lib subfolders to include -->
       <directory>../src/Exceptions</directory>
-      <directory>../src/Interfaces</directory>
       <directory>../src/Types</directory>
       <directory>../src/Analyzer.php</directory>
       <directory>../src/InformationClass.php</directory>
