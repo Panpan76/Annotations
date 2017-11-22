@@ -31,6 +31,34 @@ class InformationClass{
     $this->setAttributes($reflectionClass);
   }
 
+  public function getNamespace(){
+    return $this->namespace;
+  }
+
+  public function getClassname(){
+    return $this->classname;
+  }
+
+  public function getParent(){
+    return $this->parent;
+  }
+
+  public function getInterfaces(){
+    return $this->interfaces;
+  }
+
+  public function getMethods(){
+    return $this->methods;
+  }
+
+  public function getAttributes(){
+    return $this->attributes;
+  }
+
+  public function getFilepath(){
+    return $this->filepath;
+  }
+
   private function setInterfaces(\ReflectionClass $reflectionClass){
     foreach($reflectionClass->getInterfaces() as $interface){
       $this->interfaces[$interface->getName()] = new self($interface->getName(), $this->analyzer);
