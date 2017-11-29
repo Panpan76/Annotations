@@ -7,7 +7,8 @@
         }
     },
     "require": {
-        "php": "7.*"
+        "php": "7.*",
+        "panpan76/logguer" : "^0.0.1"
     },
     "minimum-stability": "stable",
     "authors": [

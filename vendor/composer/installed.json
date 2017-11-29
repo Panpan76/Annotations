@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "name": "panpan76/logguer",
+        "version": "0.0.1",
+        "version_normalized": "0.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Panpan76/Logguers.git",
+            "reference": "6b396a9acbfd164efec848b212f3e62b994da894"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Panpan76/Logguers/zipball/6b396a9acbfd164efec848b212f3e62b994da894",
+            "reference": "6b396a9acbfd164efec848b212f3e62b994da894",
+            "shasum": ""
+        },
+        "require": {
+            "php": "7.*"
+        },
+        "time": "2017-11-29T10:03:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Logguers\\": "src/Logguers",
+                "Exceptions\\": "src/Exceptions"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Panpan76",
+                "email": "cedric.moclyn@hotmail.fr"
+            }
+        ]
+    }
+]

@@ -4,8 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef0673cd85c9f34d688995afa1a6f7c3",
-    "packages": [],
+    "content-hash": "ca08313297bfe882a74064d84bdb301f",
+    "packages": [
+        {
+            "name": "panpan76/logguer",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Panpan76/Logguers.git",
+                "reference": "6b396a9acbfd164efec848b212f3e62b994da894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Panpan76/Logguers/zipball/6b396a9acbfd164efec848b212f3e62b994da894",
+                "reference": "6b396a9acbfd164efec848b212f3e62b994da894",
+                "shasum": ""
+            },
+            "require": {
+                "php": "7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Logguers\\": "src/Logguers",
+                    "Exceptions\\": "src/Exceptions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Panpan76",
+                    "email": "cedric.moclyn@hotmail.fr"
+                }
+            ],
+            "time": "2017-11-29T10:03:29+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

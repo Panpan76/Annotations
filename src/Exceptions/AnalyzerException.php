@@ -2,6 +2,8 @@
 
 namespace Annotations\Exceptions;
 
+use Exceptions\Exception;
+
 class AnalyzerException extends Exception{
   const LOG_FILE = 'analyzer';
 
