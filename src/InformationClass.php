@@ -73,7 +73,7 @@ class InformationClass{
       foreach($method->getParameters() as $parameter){
         $infosParameter = array(
           'name' => $parameter->getName(),
-          'type' => $parameter->getType()->__toString(),
+          'type' => is_null($parameter->getType()) ? null : $parameter->getType()->__toString(),
         );
         if($parameter->isOptional()){
           $infosParameter['default'] = $parameter->getDefaultValue();
